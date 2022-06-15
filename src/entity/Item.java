@@ -11,11 +11,15 @@ public class Item {
 
 	// since we use set to de-duplicate items, in this way, we compare the itemId
 	// instead of the whole obj
+
+	private String name;
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((itemId == null) ? 0 : itemId.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
 
@@ -33,10 +37,14 @@ public class Item {
 				return false;
 		} else if (!itemId.equals(other.itemId))
 			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
 		return true;
 	}
 
-	private String name;
 	private double rating;
 	private String address;
 	private Set<String> categories;

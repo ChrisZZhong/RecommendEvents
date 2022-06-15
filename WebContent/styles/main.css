@@ -13,7 +13,6 @@ body {
 }
 
 ul {
-	/* 小点 */
 	list-style: none;
 }
 
@@ -54,7 +53,7 @@ ul {
 	color: #F9F9F9;
 	font-weight: 400;
 	margin-left: 20px;
-	text-decoration: none; /* 下划线 */
+	text-decoration: none;
 }
 
 #welcome-msg {

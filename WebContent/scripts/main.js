@@ -4,7 +4,7 @@
      * Variables
      */
     var user_id = '1111';
-    var user_fullname = 'John';
+    var user_fullname = 'Guest';
     var lng = -122.08;
     var lat = 37.38;
 
@@ -191,7 +191,8 @@
         var url = './search';
         var params = 'user_id=' + user_id + '&lat=' + lat + '&lon=' + lng;
         var req = JSON.stringify({});
-
+        console.log(lat);
+        console.log(lng);
         // display loading message
         showLoadingMessage('Loading nearby items...');
 
