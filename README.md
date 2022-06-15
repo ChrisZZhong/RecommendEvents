@@ -1,6 +1,6 @@
 # Event Recommendation　－　AWS based Web Service for Event Recommendation
 
-Project Link: 
+Project Link: http://18.204.216.43:8080/Jupiter/#
 
 •	Developed interactive web pages for users to search and apply positions (HTML, CSS, JavaScript, AJAX).
 
